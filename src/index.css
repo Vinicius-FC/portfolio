@@ -1,0 +1,32 @@
+/* Define os tokens visuais globais para manter cores, tipografia e espaçamentos consistentes. */
+:root {
+  --background: #070b0e;
+  --surface: #0c1216;
+  --surface-soft: #10181d;
+  --border: #1c292f;
+  --text: #eef4f6;
+  --muted: #8d9da4;
+  --accent: #58e1c1;
+  --accent-soft: rgba(88, 225, 193, 0.1);
+  --container: 1180px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--background); }
+body, button, a { font: inherit; }
+a { color: inherit; }
+button { color: inherit; }
+::selection { color: #06100e; background: var(--accent); }
+
+/* Remove animações para visitantes que tenham solicitado menos movimento no sistema operacional. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

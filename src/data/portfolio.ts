@@ -71,8 +71,8 @@ export const education: EducationItem[] = [
 
 // Concentra links pessoais pendentes para que possam ser substituídos sem procurar pelos componentes.
 export const externalLinks = {
-  github: '#link-github',
-  linkedin: '#link-linkedin',
-  resume: '#link-curriculo',
-  email: 'mailto:email@exemplo.com',
+  github: '#https://github.com/Vinicius-FC',
+  linkedin: '#https://www.linkedin.com/in/vinicius-cucinota-7b0590206/',
+  resume: '#https://drive.google.com/file/d/19su8LqFBhTaW48FLU6533tUGfeaytbQd/view?usp=sharing',
+  email: 'mailto:vinicius.f.cucinota@gmail.com',
 }

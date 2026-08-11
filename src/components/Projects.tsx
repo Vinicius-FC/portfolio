@@ -16,7 +16,7 @@ export function Projects() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <ul>{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul>
-                <a className="arrow-link" href={project.repositoryUrl}>Ver no GitHub <span>↗</span></a>
+                <a className="arrow-link" href={project.repositoryUrl} target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
               </div>
             </article>
           ))}

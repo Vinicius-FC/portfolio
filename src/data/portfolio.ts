@@ -61,6 +61,13 @@ export const projects: Project[] = [
     technologies: ['Playwright', 'TypeScript', 'Node.js', 'Git', 'GitHub'],
     repositoryUrl: '#link-github-projeto',
   },
+  {
+    title: 'QA Manual & Bug Reporting',
+    status: 'Concluído',
+    description: 'Projeto fictício desenvolvido para demonstrar práticas de Quality Assurance Manual, incluindo planejamento de testes, criação de cenários e casos de teste, testes exploratórios, reporte de bugs e relatório de execução.',
+    technologies: ['Manual Testing', 'Functional Testing', 'Test Cases', 'Test Scenarios', 'Bug Reporting', 'Exploratory Testing', 'Regression Testing', 'Test Planning', 'Markdown', 'Git', 'GitHub'],
+    repositoryUrl: 'https://github.com/Vinicius-FC/qa-bug-report-project',
+  },
 ]
 
 // Mantém instituição e período como placeholders porque essas informações ainda não foram fornecidas.

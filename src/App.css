@@ -33,6 +33,10 @@
 .button--secondary { background: rgba(12,18,22,.7); }
 .text-link { margin-left: 8px; color: #aab6ba; font-size: .78rem; text-decoration: none; border-bottom: 1px solid #455158; padding-bottom: 3px; }
 .hero__visual { position: relative; min-height: 330px; display: grid; place-items: center; }
+.hero__photo-frame { position: relative; z-index: 2; width: min(100%, 390px); aspect-ratio: 4 / 5; padding: 8px; background: rgba(8,15,18,.88); border: 1px solid #2c4149; box-shadow: 0 35px 90px rgba(0,0,0,.45); transform: rotate(1.5deg); }
+.hero__photo-frame::before { content: ''; position: absolute; z-index: -1; inset: -14px 14px 14px -14px; border: 1px solid rgba(88,225,193,.35); }
+.hero__photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; filter: saturate(.88) contrast(1.04); }
+.hero__photo-label { position: absolute; right: -18px; bottom: 26px; padding: 9px 13px; color: #06100e; background: var(--accent); font: 800 .68rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
 .terminal { position: relative; z-index: 2; width: min(100%, 455px); overflow: hidden; background: rgba(8,15,18,.88); border: 1px solid #26373e; box-shadow: 0 35px 90px rgba(0,0,0,.45); transform: perspective(800px) rotateY(-4deg) rotateX(2deg); }
 .terminal__bar { height: 42px; display: flex; align-items: center; gap: 7px; padding: 0 15px; background: #111a1f; border-bottom: 1px solid #26373e; }
 .terminal__bar span { width: 8px; height: 8px; border-radius: 50%; background: #384950; }
@@ -104,7 +108,7 @@ footer .container { display: flex; justify-content: space-between; align-items: 
 @media (max-width: 900px) {
   .section { padding: 88px 0; }.menu-button { display: grid; width: 42px; height: 42px; place-content: center; gap: 6px; }.menu-button span { width: 22px; height: 1px; background: var(--text); }
   .navigation { position: absolute; top: 74px; right: 0; left: 0; display: none; flex-direction: column; gap: 0; padding: 12px 24px 24px; background: #080d10; border-bottom: 1px solid var(--border); }.navigation--open { display: flex; }.navigation a { width: 100%; padding: 14px 0; font-size: .9rem; border-bottom: 1px solid rgba(255,255,255,.04); }
-  .hero__content { grid-template-columns: 1fr; }.hero__visual { display: none; }.hero__copy { max-width: 720px; }.scroll-cue { display: none; }
+  .hero__content { grid-template-columns: 1fr; }.hero__visual { width: min(100%, 430px); min-height: auto; margin: 22px auto 0; }.hero__copy { max-width: 720px; }.scroll-cue { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 0; }.about-copy { padding: 0; }
   .skill-card, .skill-card:nth-child(4), .skill-card:nth-child(5) { grid-column: span 3; }
   .experience-card { grid-template-columns: 1fr; }.experience-card__aside { border-right: 0; border-bottom: 1px solid var(--border); }
@@ -113,7 +117,7 @@ footer .container { display: flex; justify-content: space-between; align-items: 
 
 @media (max-width: 600px) {
   .container { width: min(calc(100% - 32px), var(--container)); }.section { padding: 74px 0; }.section-heading { margin-bottom: 40px; }
-  .hero { min-height: auto; padding-top: 130px; padding-bottom: 85px; }.availability { margin-bottom: 25px; }.hero h1 { font-size: clamp(3rem, 15vw, 4.5rem); }.hero__role { line-height: 1.7; }.hero__actions { align-items: stretch; }.button { flex: 1 1 calc(50% - 8px); }.text-link { width: 100%; margin: 8px 0 0; text-align: center; border: 0; }
+  .hero { min-height: auto; padding-top: 130px; padding-bottom: 85px; }.availability { margin-bottom: 25px; }.hero h1 { font-size: clamp(3rem, 15vw, 4.5rem); }.hero__role { line-height: 1.7; }.hero__actions { align-items: stretch; }.button { flex: 1 1 calc(50% - 8px); }.text-link { width: 100%; margin: 8px 0 0; text-align: center; border: 0; }.hero__visual { width: min(88%, 360px); margin-top: 8px; }.hero__photo-label { right: -10px; }
   .skills-grid { grid-template-columns: 1fr; }.skill-card, .skill-card:nth-child(4), .skill-card:nth-child(5) { grid-column: auto; min-height: auto; }
   .experience-card__aside { padding: 30px; }.experience-list { grid-template-columns: 1fr; padding: 18px; }
   .project-card { grid-template-columns: 1fr; }.project-card__number { padding: 24px 28px; border-right: 0; border-bottom: 1px solid var(--border); }.project-card__content { padding: 32px 26px; }

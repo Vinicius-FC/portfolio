@@ -59,7 +59,7 @@ export const projects: Project[] = [
     status: 'Em desenvolvimento',
     description: 'Framework de automação de testes desenvolvido com Playwright e TypeScript, com foco em boas práticas, organização, reutilização e evolução dos conhecimentos em QA Automation.',
     technologies: ['Playwright', 'TypeScript', 'Node.js', 'Git', 'GitHub'],
-    repositoryUrl: '#link-github-projeto',
+    repositoryUrl: 'https://github.com/Vinicius-FC/qa-playwright-framework',
   },
   {
     title: 'QA Manual & Bug Reporting',
@@ -72,14 +72,14 @@ export const projects: Project[] = [
 
 // Mantém instituição e período como placeholders porque essas informações ainda não foram fornecidas.
 export const education: EducationItem[] = [
-  { course: 'Análise e Desenvolvimento de Sistemas', status: 'Graduado', institution: '[Instituição a informar]', period: '[Período a informar]' },
-  { course: 'Segurança da Informação / Cibersegurança', status: 'Graduado', institution: '[Instituição a informar]', period: '[Período a informar]' },
+  { course: 'Análise e Desenvolvimento de Sistemas', status: 'Graduado', institution: 'USCS - Universidade Municipal de São Caetano do Sul', period: 'Janeiro 2021 - Junho 2024' },
+  { course: 'Segurança da Informação / Cibersegurança', status: 'Graduado', institution: 'USCS - Universidade Municipal de São Caetano do Sul', period: 'Fevereiro 2025 - Junho 2026' },
 ]
 
 // Concentra links pessoais pendentes para que possam ser substituídos sem procurar pelos componentes.
 export const externalLinks = {
-  github: '#https://github.com/Vinicius-FC',
-  linkedin: '#https://www.linkedin.com/in/vinicius-cucinota-7b0590206/',
-  resume: '#https://drive.google.com/file/d/19su8LqFBhTaW48FLU6533tUGfeaytbQd/view?usp=sharing',
-  email: 'mailto:vinicius.f.cucinota@gmail.com',
+  github: 'https://github.com/Vinicius-FC',
+  linkedin: 'https://www.linkedin.com/in/vinicius-cucinota-7b0590206/',
+  resume: 'https://drive.google.com/file/d/19su8LqFBhTaW48FLU6533tUGfeaytbQd/view?usp=drive_link',
+  email: 'https://mail.google.com/mail/?view=cm&fs=1&to=vinicius.f.cucinota@gmail.com&su=Contato%20pelo%20portf%C3%B3lio',
 }
